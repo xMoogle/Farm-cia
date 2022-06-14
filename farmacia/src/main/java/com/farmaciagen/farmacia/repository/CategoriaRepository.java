@@ -10,5 +10,5 @@ import com.farmaciagen.farmacia.model.Categoria;
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>
 {
- public List<Categoria> finAllByDescricaoContainingIgnoreCase (String descricao);
+ public List<Categoria> findAllByDescricaoContainingIgnoreCase (String descricao);
 }
